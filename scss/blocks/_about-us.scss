@@ -1,0 +1,77 @@
+.about-us {
+  & .container{
+    flex: none;
+    margin-bottom: 50px;
+    
+
+    @media (min-width: $bp-laptop) {
+      display: flex;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__image {
+    width: 0%;
+    display: none;
+
+    @media (min-width: $bp-laptop){
+      display: block;
+      margin-right: 20px;
+      width: 50%;
+    }    
+  }
+
+  &__main-image{
+    @media (min-width: $bp-laptop){
+      border-radius: 10px;
+    }
+  }
+
+  &__body {
+    width: 100%;
+    margin-left: 0;
+    align-self: center;
+
+    @media (min-width: $bp-laptop){
+      width: 50%;
+      margin-left: 20px;
+      align-self: center;
+    }
+  }
+
+  &__heading {
+    color:var(--auraColor-heading);
+    font-family: var(--auraFontFamily);
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1em;
+
+    @media (min-width: $bp-laptop){
+      font-size: 36px;
+      line-height: 1em;
+    }
+  }
+
+  &__description {
+    color: var(--auraColor-text);
+    font-family: var(--auraFontFamily-description);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6em;
+    margin-top: 18px;
+    margin-bottom: 16px;
+  }
+
+  &__button{
+    margin-top: 16px;
+
+    @media (min-width: $bp-mobile){
+      margin-top: 18px;
+    }
+
+    @media (min-width: $bp-laptop){
+      margin-top: 16px;
+    }
+  }
+}

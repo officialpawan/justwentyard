@@ -1,0 +1,97 @@
+.header-base {
+    position:absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    display: block;
+    z-index: 1;
+
+    & .container{
+        display: flex;
+    }
+
+    &__logo-image{
+        margin-top:35px;
+        width:110.82px;
+        height: 120px;
+
+        @media (min-width:$bp-laptop){
+            margin-top:20px;
+            width:147.75px;
+            height: 160px;
+        }
+    }
+
+    &__text{
+        display: none;
+        width: 66.666%;
+        margin-left: auto;
+        
+        @media (min-width: $bp-mobile){
+            display: block;
+        }
+    }
+
+    &__info{
+        @media (min-width: $bp-mobile){
+            margin-left:auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top:43px;
+            margin-bottom:15px;
+            color: var(--auraColor-background);
+        }
+    }
+
+    &__tagline{
+        @media (min-width: $bp-mobile){
+            font-family: var(--auraFontFamily-cursive);
+            font-size: 24px;
+            line-height: 1.2em;
+            padding-top:20px;
+            margin-bottom: 0px;
+        }
+    }
+
+    &__call-text{
+        @media (min-width: $bp-mobile){
+            margin: 0;
+            display: block;
+            padding-left: 10px;
+            font-size:16px;
+            line-height: 1.2em;
+            font-family: var(--auraFontFamily-description);
+        }
+    }
+
+    &__call-icon{
+        @media (min-width: $bp-mobile){
+            width:40px;
+            height:40px;
+        }
+    }
+
+    &__call{
+        @media (min-width: $bp-mobile){
+            color: var(--auraColor-background);
+            display:flex;
+        }
+    }
+
+    &__menu {
+        ul {
+            display:flex;
+            list-style: none;
+            justify-content: space-between;
+            padding: 0;
+            padding-top:15px;
+            text-transform: uppercase;
+            font-family: "Nunito Sans",Sans-serif;
+            border-top: 1px solid var(--auraColor-section-3-heading-shadow); 
+        }
+
+        a {
+            color:  var(--auraColor-background);
+        }
+    }
+}

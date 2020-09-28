@@ -1,0 +1,23 @@
+.contact-links{
+    &__item{
+        font-family: var(--auraFontFamily-description);
+        font-size: 16px;
+        line-height: 1.2em;
+        margin-bottom: 20px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    &__link{
+        display: flex;
+        color: var(--auraColor-background);
+    }
+
+    &__icon{
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+}

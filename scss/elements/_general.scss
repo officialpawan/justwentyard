@@ -1,0 +1,50 @@
+body {
+  font-family:"Nunito Sans",Sans-serif;
+  color: #555555;
+  font-size: 16px;
+  font-weight: 400;
+  font-style:normal;
+  line-height:1.6em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #121723;
+  transition: all 250ms ease-out;
+
+  &:hover {
+    color: #87ceeb;
+    text-decoration: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nunito Sans",Sans-serif;
+  color: #2A4575;
+  line-height: 1.2em;
+}
+
+h1 {
+ font-size: 27px;
+ letter-spacing: -0.6px;
+}
+
+h2 {
+  font-size: 21px;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-size: 18px; 
+}

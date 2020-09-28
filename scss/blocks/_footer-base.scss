@@ -1,0 +1,44 @@
+.footer-base {
+  & .container{
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @media (min-width: $bp-mobile){
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width:$bp-laptop){
+      grid-template-columns: 33.333% 1fr;
+    }
+  }
+
+  &__logo {
+    width: 110.82px;
+
+    @media( min-width: $bp-mobile){
+      width: 147.75px;
+    }
+  }
+
+  &__contact-links {
+    margin-top: 40px;
+  }
+  
+  &__map {
+    width: 100%;
+    vertical-align: bottom;
+    margin-top: 40px;
+
+    @media (min-width: $bp-mobile){
+      margin-top: 32px;
+    }
+
+    @media (min-width: $bp-laptop){
+      margin-top: 50px;
+    }
+  }
+
+  &__map-iframe {
+    border-radius: 10px;
+  }
+}

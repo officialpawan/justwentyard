@@ -1,0 +1,67 @@
+.colophon {
+    & .container{
+        display: flex;
+        display: inline-block;
+        margin-top: 20px;
+
+        @media( min-width: $bp-mobile){
+            display: flex;
+            margin-top: 26px;
+          }
+    }
+
+  &__copyright {
+    color: var(--auraColor-colophon);
+    font-family: var(--auraFontFamily-description);
+    font-size: 13px;
+    line-height: 1.38em;
+    margin-right:0;
+
+    @media (min-width:$bp-mobile){
+        margin-right: 30px;
+      }
+  }
+
+  &__menu {
+
+    ul{
+      display: flex;
+      list-style: none;
+      font-family: var(--auraFontFamily-description);
+      font-size: 13px;
+      line-height: 1.38em;
+      margin-top: 10px;
+      margin-bottom: 0;
+      padding-left: 0;
+      @media( min-width: $bp-mobile){
+        margin-top: 0;
+
+      }
+    }
+
+    li{
+      margin-right: 20px;
+    }
+
+    a{
+      color: var(--auraColor-colophon);
+    }
+  }
+
+  &__credit {
+    margin-left: auto;
+    font-family: var(--auraFontFamily-description);
+    font-size: 13px;
+    line-height: 1.38em;
+    margin-top: 12px;
+
+    a{
+      color: var(--auraColor-colophon);
+    }
+
+    @media( min-width: $bp-mobile){
+      margin-top: 0;
+    }
+}
+}
+

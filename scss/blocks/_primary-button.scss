@@ -1,0 +1,14 @@
+.primary-button {
+    flex-shrink: 0;
+    background-color: var(--auraColor-accent);
+    padding: 15px 20px 15px;
+    border-radius: 5px;
+    line-height: 1.2em;
+    border: none;
+    transition: all 250ms ease-out;
+
+    &:hover{
+        background-color: darkblue;
+        color: #87ceeb;
+    }
+}

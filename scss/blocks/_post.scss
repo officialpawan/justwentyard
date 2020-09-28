@@ -1,0 +1,24 @@
+.post {
+    &__image img {
+        border-radius: 5px;
+    }
+    
+    &__title {
+        color: var(--auraColor-heading);
+        font-family: var(--auraFontFamily-description);
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.2em;
+        margin-top: 17px;
+    }
+    
+    &__read-more {
+        color: #999;
+        font-family: var(--auraFontFamily-description);
+        font-size: 13px;
+        font-weight: 400;
+        margin-top: 5px;
+        line-height: 1.384em;
+        letter-spacing: 2.6px;
+    } 
+}

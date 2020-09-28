@@ -1,0 +1,40 @@
+
+.cta {
+    &__title {
+        color: var(--auraColor-accent);
+        font-size: 18px;
+        margin-top: 40px;
+        line-height: 1.2em;
+    }
+
+    &__form {
+        display: flex;
+        margin-top: 15px;
+        width: 100%;
+        max-width: 336px;
+        height: 51px;
+        background-color: var(--auraColor-background);
+        border-radius: 5px;
+        border: 0px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+
+        @media (min-width: $bp-laptop){
+            display: flex;
+            margin-top: 15px;
+            width: 100%;
+            max-width: 440px;
+            height: 51px;
+            background-color: var(--auraColor-background);
+            border-radius: 5px;
+            border: 0px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    &__email {
+        background-color: transparent;
+        border: none;
+        width: 319px;
+    }
+}
+
